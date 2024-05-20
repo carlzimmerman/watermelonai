@@ -1,6 +1,6 @@
 # watermelonai
 
-A new Flutter project.
+A new Flutter project using google's generative ai plugin 
 
 ## Getting Started
 
@@ -14,3 +14,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+
+## You will need to update GEMINI_API_KEY in lib/services/watermelon_service.dart to your own for it to work.  
