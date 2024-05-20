@@ -7,7 +7,11 @@ import '../models/watermelon.dart';
 
 class WatermelonService {
   static Future<Watermelon?> analyzeWatermelon(String imagePath) async {
-    const apiKey = 'GEMINI_API_KEY';
+
+
+    final apiKey = 'GEMINI_API_KEY'; // Replace with your actual API key
+
+
     if (apiKey == null) {
       throw Exception('API Key not found.');
     }
@@ -30,8 +34,7 @@ Include the following details:
 * **juicyness:** ("Low", "Medium", "High", "Very High")
 * **symmetry:** ("Poor", "Average", "Good", "Excellent")
 * **freshness:** ("Old", "Ripe", "Just Picked")
-* **color:** ("Red", "Yellow", "Orange", etc.)
-* **rindPattern:** ("Striped", "Solid", "Spotted", etc.)
+
 
 Example output:
 
@@ -40,9 +43,7 @@ Example output:
   "size": "Large",
   "juicyness": "High",
   "symmetry": "Good",
-  "freshness": "Ripe",
-  "color": "Red",
-  "rindPattern": "Striped"
+  "freshness": "Ripe"
 }
 
 Important:
